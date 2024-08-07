@@ -1,15 +1,15 @@
-import express from 'express';
-import usersRouter from './routes/users.router.js';
-import productsRouter from './routes/products.router.js';
-import pruebasRouter from './routes/pruebas.router.js';
-import viewsRouter from './routes/views.router.js';
-import logger from 'morgan';
-import {uploader} from './utils/multer.js';
-import {rootDir} from './utils/dirname.js';
-import path from 'path';
-import handlebars from 'express-handlebars';
+const express = require('express') ;
+const usersRouter = require('./routes/users.router.js') ;
+const productsRouter = require('./routes/products.router.js') ;
+const pruebasRouter = require('./routes/pruebas.router.js') ;
+const viewsRouter = require('./routes/views.router.js') ;
+const logger = require('morgan') ;
+const {uploader} = require('./utils/multer.js');
+const {rootDir} = require('./utils/dirname.js');
+const path = require('path');
+const handlebars = require('express-handlebars');
 
-import {Server} from 'socket.io';
+const {Server} = require('socket.io');
 
 
 const app = express();
